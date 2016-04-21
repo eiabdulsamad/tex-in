@@ -56,11 +56,7 @@ $('.second-menu-section .btn-group').append('<div class="header-top-entry"><div 
   }*/
 
 
-  function languageSelector(lang) {
-    var $frame = $('.goog-te-menu-frame:first');
-    $frame.contents().find('.goog-te-menu2-item span.text:contains('+lang+')').get(0).click();
-  }
-
+ 
 
 
 
@@ -68,7 +64,7 @@ $('.second-menu-section .btn-group').append('<div class="header-top-entry"><div 
 function getCoverValue() {
     $.ajax({
       method: 'GET',
-      url: 'data/_all'+xten,
+      url: 'data/alldata'+xten,
       dataType: 'json'
     })
     .done(function (coverValues) {
@@ -144,6 +140,10 @@ function placeholderLanguage() {
   }
 }
 
+ function languageSelector(lang) {
+    var $frame = $('.goog-te-menu-frame:first');
+    $frame.contents().find('.goog-te-menu2-item span.text:contains('+lang+')').get(0).click();
+  }
 
 
 //Language setup
