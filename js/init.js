@@ -68,7 +68,7 @@ $('.second-menu-section .btn-group').append('<div class="header-top-entry"><div 
 function getCoverValue() {
     $.ajax({
       method: 'GET',
-      url: 'data/_all'+xten,
+      url: 'data/alldata'+xten,
       dataType: 'json'
     })
     .done(function (coverValues) {
