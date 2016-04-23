@@ -2774,7 +2774,8 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
   text-transform: capitalize;
   z-index: 10; }
   .second-menu-section .btn-group .textksa {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding-right: 18px; }
 
 .arabic #order-now button {
   float: left !important; }
