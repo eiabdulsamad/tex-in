@@ -2787,7 +2787,16 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
     font-weight: 700; }
   .about_details .list-items {
     float: left; }
+    .about_details .list-items li {
+      list-style: square; }
 
+.arabic .about_details {
+  text-align: right; }
+  .arabic .about_details .list-items {
+    float: right; }
+.arabic .main-section {
+  display: -webkit-flex;
+  display: flex; }
 .arabic #order-now button {
   float: left !important; }
 .arabic #order-now p {

@@ -3307,21 +3307,31 @@ div[data-rpt="2"] {
 }
 
 .about_details {
-      margin: 5px 20px;
-      h4 {
-        font-family: 'Droid Arabic Kufi', 'Roboto', sans-serif;
-            color: #363432;
+  margin: 5px 20px;
+  h4 {
+    font-family: 'Droid Arabic Kufi', 'Roboto', sans-serif;
+    color: #363432;
     font-size: 14px;
     font-weight: 700;
-      }
-      .list-items {
-        float: left;
-        
-      }
+  }
+  .list-items {
+    float: left;
+    li {
+      list-style: square;
+    }
+  }
 }
 
 .arabic {
-
+  .about_details {
+    text-align: right;
+    .list-items {
+      float: right;
+    }
+  }
+  .main-section {
+    @include display-flex;
+  }
   #order-now {
     button {
       float: left !important;
