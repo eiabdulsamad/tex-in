@@ -3,59 +3,8 @@ $(function() {
 
   rating('.rating-box');
 
-setTimeout(function() {
-    generateMenu();
-    menuSmart();
- },100);
-// ---------start menu---------
 
 
-function generateMenu() {
-    var coverVal = coverV(),
-    i = 0;
-    $.each(coverVal, function(key, val) {
-      var vars = [],
-      menus = val[0]['menu'],
-      splitter = '/';
-      if(menus.indexOf(splitter) > -1) {
-        if(i < 1) {
-          $('.dropdown-dynamic').append('<ul class="dropdown-menu sectionTotal"></ul>');
-          i = 1;
-        }    
-        var menu = menus.split(splitter);
-        $.each(menu, function( cat, menuVal) {
-          vars.push(menuVal[0]);
-          vars[cat] = menuVal;
-        });
-        for(i=0; i < vars.length; i++) {
-          create = vars[i-1];
-          if(typeof create == 'undefined') {
-            var classFix = vars[i].replace(' ','_');
-            if(! $('.dropdown-dynamic ul.sectionTotal li').hasClass('menuS-'+classFix)) {
-              $('.dropdown-dynamic ul.sectionTotal').append('<li class="menuS-'+classFix+'"><a>'+vars[i]+'</a></li>');
-            }
-          }
-          for(j=0; j < i; j++) {
-            var classFix = vars[i].replace(' ','_');
-            var classFixb = vars[i-1].replace(' ','_');
-            if(!($('.dropdown-dynamic ul.sectionTotal .menuS-'+classFixb).find('.dropdown-menu').hasClass('menuS-drop'+classFixb))) {
-              $('.dropdown-dynamic ul.sectionTotal .menuS-'+classFixb).append('<ul class="dropdown-menu menuS-drop'+classFixb+'"></ul>');
-            }
-            if(!($('.dropdown-dynamic ul.sectionTotal .menuS-'+classFixb+' .menuS-drop'+classFixb+' li').hasClass('menuS-'+classFix))) {
-              var iSet = '<a href="products.html?i='+key+'">'+vars[i]+'</a>';
-              /*if(!(typeof vars[i+1] == 'undefined')) {
-                var iSet = '<a class="'+key+'">'+vars[i]+'<i class="fa fa-angle-right pull-right"></i></a>';
-              } */
-              $('.dropdown-dynamic ul.sectionTotal').find('.menuS-'+classFixb+' .dropdown-menu').append('<li class="menuS-'+classFix+'">'+iSet+'</ul>');
-            } 
-          }
-        }
-      } else {
-        $('.dropdown-dynamic .sectionTotal').append('<li class="menuS-'+menus+'"><a href="products.html?i='+key+'">'+menus+'</a></li>');
-      }
-    });
-}
-// ---------end menu---------
 
 
 $(document).on('click', '.open-product', function(){
@@ -463,14 +412,6 @@ var carousalScroll = new Swiper('.carousel-track', {
   slidesPerView: sldPerView,
         paginationClickable: true,
         spaceBetween:20
-});
-
-var footerScroll = new Swiper('.footer-scroll', {
-  nextButton: '.swiper-button-next',
-  prevButton: '.swiper-button-prev',
-  speed: 900,
-  autoplay: 3000,
-  loop: true,
 });
 
 var galleryTop = new Swiper('.gallery-top', {

@@ -4,9 +4,91 @@ img_num = 0;
 setID = null;
 cTemp= [];
 
-if($('body').hasClass('home')||$('body').hasClass('products')||$('body').hasClass('product-view')) {
-  getCoverValue();
+function getCoverValue() {
+    $.ajax({
+      method: 'GET',
+      url: 'data/alldata'+xten,
+      dataType: 'json'
+    })
+    .done(function (coverValues) {
+      coverV(coverValues)
+    })
+    .fail(function () {
+      alert('Data loading failed!')
+    });
+  }
+
+
+function coverV(coverValues) {
+   if((typeof coverValues != 'undefined')) {
+    cTemp = coverValues
+  } else {
+    return cTemp;
+  }
 }
+
+
+getCoverValue();
+
+
+
+
+
+// ---------start menu---------
+
+setTimeout(function() {
+    generateMenu();
+    menuSmart();
+ },100);
+
+ 
+function generateMenu() {
+    var coverVal = coverV(),
+    i = 0;
+    $.each(coverVal, function(key, val) {
+      var vars = [],
+      menus = val[0]['menu'],
+      splitter = '/';
+      if(menus.indexOf(splitter) > -1) {
+        if(i < 1) {
+          $('.dropdown-dynamic').append('<ul class="dropdown-menu sectionTotal"></ul>');
+          i = 1;
+        }    
+        var menu = menus.split(splitter);
+        $.each(menu, function( cat, menuVal) {
+          vars.push(menuVal[0]);
+          vars[cat] = menuVal;
+        });
+        for(i=0; i < vars.length; i++) {
+          create = vars[i-1];
+          if(typeof create == 'undefined') {
+            var classFix = vars[i].replace(' ','_');
+            if(! $('.dropdown-dynamic ul.sectionTotal li').hasClass('menuS-'+classFix)) {
+              $('.dropdown-dynamic ul.sectionTotal').append('<li class="menuS-'+classFix+'"><a>'+vars[i]+'</a></li>');
+            }
+          }
+          for(j=0; j < i; j++) {
+            var classFix = vars[i].replace(' ','_');
+            var classFixb = vars[i-1].replace(' ','_');
+            if(!($('.dropdown-dynamic ul.sectionTotal .menuS-'+classFixb).find('.dropdown-menu').hasClass('menuS-drop'+classFixb))) {
+              $('.dropdown-dynamic ul.sectionTotal .menuS-'+classFixb).append('<ul class="dropdown-menu menuS-drop'+classFixb+'"></ul>');
+            }
+            if(!($('.dropdown-dynamic ul.sectionTotal .menuS-'+classFixb+' .menuS-drop'+classFixb+' li').hasClass('menuS-'+classFix))) {
+              var iSet = '<a href="products.html?i='+key+'">'+vars[i]+'</a>';
+              /*if(!(typeof vars[i+1] == 'undefined')) {
+                var iSet = '<a class="'+key+'">'+vars[i]+'<i class="fa fa-angle-right pull-right"></i></a>';
+              } */
+              $('.dropdown-dynamic ul.sectionTotal').find('.menuS-'+classFixb+' .dropdown-menu').append('<li class="menuS-'+classFix+'">'+iSet+'</ul>');
+            } 
+          }
+        }
+      } else {
+        $('.dropdown-dynamic .sectionTotal').append('<li class="menuS-'+menus+'"><a href="products.html?i='+key+'">'+menus+'</a></li>');
+      }
+    });
+}
+// ---------end menu---------
+
 
 
 hrefFull = window.location.href;
@@ -55,34 +137,6 @@ $('.second-menu-section .btn-group').append('<div class="header-top-entry"><div 
     lang = 'English';
   }*/
 
-
- 
-
-
-
-
-function getCoverValue() {
-    $.ajax({
-      method: 'GET',
-      url: 'data/alldata'+xten,
-      dataType: 'json'
-    })
-    .done(function (coverValues) {
-      coverV(coverValues)
-    })
-    .fail(function () {
-      alert('Data loading failed!')
-    });
-  }
-
-
-function coverV(coverValues) {
-   if((typeof coverValues != 'undefined')) {
-    cTemp = coverValues
-  } else {
-    return cTemp;
-  }
-}
 
 
 //get url parameter
@@ -139,6 +193,17 @@ function placeholderLanguage() {
     }
   }
 }
+
+$(window).load(function() {
+  var footerScroll = new Swiper('.footer-scroll', {
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    speed: 900,
+    autoplay: 3000,
+    loop: true,
+  });
+});
+
 
  function languageSelector(lang) {
     var $frame = $('.goog-te-menu-frame:first');

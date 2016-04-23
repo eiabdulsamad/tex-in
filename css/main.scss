@@ -3244,10 +3244,13 @@ div[data-rpt="2"] {
 }
 }
 
-.main-section {
-  @include display-flex;
-  @media (max-width: 768px) {
+@media (max-width: 767px) {
+  .main-section {
+    @include display-flex;
     display: block;
+  }
+  .second-menu-section .btn-group .textksa {
+    padding-right: 0 !important;
   }
 }
 
@@ -3303,6 +3306,20 @@ div[data-rpt="2"] {
   }
 }
 
+.about_details {
+      margin: 5px 20px;
+      h4 {
+        font-family: 'Droid Arabic Kufi', 'Roboto', sans-serif;
+            color: #363432;
+    font-size: 14px;
+    font-weight: 700;
+      }
+      .list-items {
+        float: left;
+        
+      }
+}
+
 .arabic {
 
   #order-now {
@@ -3343,8 +3360,15 @@ div[data-rpt="2"] {
 .footer-bottom p {
     font-size: 12px;
   }
-  .header-top-entry:first-child .list {
+
+.header-top-entry:first-child .list {
 }
+
+.header-top-entry:first-child .title {
+    padding-right: 0;
+    padding-left: 10px;
+}
+
   .header-top-entry .list {
   }
   .single-widget ul li a {
@@ -3390,6 +3414,9 @@ div[data-rpt="2"] {
     margin-left: 0;
     margin-right: 7px;
     float: left;
+    position: absolute;
+    top: 8px;
+    left: 0;
 }
   a#scrollUp {
     font-size: 12px;
@@ -3595,14 +3622,40 @@ div[data-rpt="2"] {
       margin-top: -10px !important;
     } 
   }
+
 }
-  @media (max-width: 991px) and (min-width: 769px){
+
+@media (max-width: 1199px) and (min-width: 991px) {
+  .textksa {
+   margin-left: -70px;
+ }
+ .textksa + .fa-caret-down {
+  display: none;
+}
+}
+
+
+  @media (max-width: 991px) and (min-width: 768px){
   .single-products:hover .product-overlay .round-button {
     height: 50px;
     i {
       display: none;
     }
 }
+
+.logo-section {
+  float: right;
+}
+
+.second-menu-section {
+  float: left;
+}
+
+
+.alg-flex {
+    display: block;
+  }
+
 
 
   .header-top-entry .list {
@@ -3648,9 +3701,7 @@ div[data-rpt="2"] {
   }
 
 }
-  .alg-flex {
-    display: block;
-  }
+  
   .mainmenu {
   width: 100%;
 }
@@ -3687,7 +3738,7 @@ div[data-rpt="2"] {
   width: 100%;
 }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   
 
 
