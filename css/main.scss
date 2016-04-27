@@ -37,6 +37,22 @@ $menu-bg: rgba(255, 255, 255, 0.94);
 }
 
 
+.main-wrp {
+  
+  opacity: 0;
+  visibility: hidden;
+  @include transition(all 1000ms ease-in);
+}
+
+.translated-rtl .arabic.pace-done .main-wrp {
+  @include transition-delay(500ms);
+}
+
+.translated-rtl .arabic.pace-done .main-wrp, .page_india.pace-done .main-wrp {
+  opacity: 1;
+  visibility: visible;
+}
+
 body {
   font-family: 'Droid Arabic Kufi', 'Roboto', sans-serif;
   position: relative;
@@ -893,6 +909,7 @@ h2.title:before {
 .shipping {
   background-color: #F2F2F2;
   margin-top: 40px;
+  margin-bottom: 40px;
   overflow: hidden;
   padding: 1px 0;
   position: relative;
@@ -1257,7 +1274,7 @@ h2.title:before {
     right: 2px;
   }
   position: absolute;
-  top: 32%;
+  top: 36%;
   z-index: 99;
   i {
     background: none repeat scroll 0 0 #f20000;
@@ -3304,6 +3321,10 @@ div[data-rpt="2"] {
       padding-right: 18px;
     }
   }
+}
+
+.offset-bottom-50 {
+  margin-bottom: 50px;
 }
 
 .about_details {

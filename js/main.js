@@ -311,7 +311,6 @@ function getContents(index, data, dataID){
   }
 
   coverVal = coverV();
-
   /*var title = coverVal[id][0]["title"],
   description = coverVal[id][0]["description"],
   subTitle = valData[indVal][0]["subTitle"],*/
@@ -383,7 +382,6 @@ $('.product-view .order-btn').click(function() {
           $('#order-name').focus();
         },300)
       },300)
-      
 });
 
 //swiper

@@ -17,6 +17,24 @@
   font-weight: 700;
   src: url(../fonts/DroidKufi-Bold.eot);
   src: url(../fonts/DroidKufi-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/DroidKufi-Bold.woff2) format("woff2"), url(../fonts/DroidKufi-Bold.woff) format("woff"), url(../fonts/DroidKufi-Bold.ttf) format("truetype"); }
+.main-wrp {
+  opacity: 0;
+  visibility: hidden;
+  -moz-transition: all 1000ms ease-in;
+  -o-transition: all 1000ms ease-in;
+  -webkit-transition: all 1000ms ease-in;
+  transition: all 1000ms ease-in; }
+
+.translated-rtl .arabic.pace-done .main-wrp {
+  -moz-transition-delay: 500ms;
+  -o-transition-delay: 500ms;
+  -webkit-transition-delay: 500ms;
+  transition-delay: 500ms; }
+
+.translated-rtl .arabic.pace-done .main-wrp, .page_india.pace-done .main-wrp {
+  opacity: 1;
+  visibility: visible; }
+
 body {
   font-family: 'Droid Arabic Kufi', 'Roboto', sans-serif;
   position: relative;
@@ -695,6 +713,7 @@ h2.title:before {
 .shipping {
   background-color: #F2F2F2;
   margin-top: 40px;
+  margin-bottom: 40px;
   overflow: hidden;
   padding: 1px 0;
   position: relative; }
@@ -973,7 +992,7 @@ h2.title:before {
 .recommended-item-control {
   cursor: pointer;
   position: absolute;
-  top: 32%;
+  top: 36%;
   z-index: 99; }
   .recommended-item-control.left {
     left: 2px; }
@@ -2777,6 +2796,9 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
   .second-menu-section .btn-group .textksa {
     text-transform: uppercase;
     padding-right: 18px; }
+
+.offset-bottom-50 {
+  margin-bottom: 50px; }
 
 .about_details {
   margin: 5px 20px; }

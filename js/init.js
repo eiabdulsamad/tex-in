@@ -31,9 +31,6 @@ function coverV(coverValues) {
 getCoverValue();
 
 
-
-
-
 // ---------start menu---------
 
 setTimeout(function() {
@@ -121,7 +118,7 @@ if((hrefFull.indexOf('qatar') >= 0) || (hrefFull.indexOf('ksa') >= 0)) {
     flval3='qatar';
   }
 
-$('.second-menu-section .btn-group').append('<div class="header-top-entry"><div class="title"><img alt="" src="images/'+flval1+'-flag.png"><span class="text'+flval1+'">'+flval1+'</span><i class="fa fa-caret-down"></i></div><div class="list"><a class="list-entry" href="#'+flval2+'"><img alt="" src="images/'+flval2+'-flag.png"><span class="text'+flval2+'">'+flval2+'</span></a><a class="list-entry" href="#'+flval3+'"><img alt="" src="images/'+flval3+'-flag.png"><span class="text'+flval3+'">'+flval3+'</span></a></div></div>');
+$('.second-menu-section .btn-group').append('<div class="header-top-entry"><div class="title"><img alt="" src="images/'+flval1+'-flag.png"><span class="text'+flval1+'">'+flval1+'</span><i class="fa fa-caret-down"></i></div><div class="list"><a class="list-entry" href="http://texworld-'+flval2+'.barrackinternational.com/"><img alt="" src="images/'+flval2+'-flag.png"><span class="text'+flval2+'">'+flval2+'</span></a><a class="list-entry" href="http://texworld-'+flval3+'.barrackinternational.com/"><img alt="" src="images/'+flval3+'-flag.png"><span class="text'+flval3+'">'+flval3+'</span></a></div></div>');
 
 /*var getLang = getUrlVars()["lang"];
 
