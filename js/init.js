@@ -33,10 +33,14 @@ getCoverValue();
 
 // ---------start menu---------
 
-setTimeout(function() {
-    generateMenu();
-    menuSmart();
- },100);
+
+Pace.on('hide', function(){
+  generateMenu();
+  menuSmart();
+  console.log('done');
+});
+
+
 
  
 function generateMenu() {
