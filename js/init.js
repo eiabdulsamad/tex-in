@@ -37,7 +37,6 @@ getCoverValue();
 Pace.on('hide', function(){
   generateMenu();
   menuSmart();
-  console.log('done');
 });
 
 
