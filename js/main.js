@@ -4,9 +4,6 @@ $(function() {
   rating('.rating-box');
 
 
-
-
-
 $(document).on('click', '.open-product', function(){
   var dataID = $(this).attr('data-id');
   
