@@ -85,7 +85,7 @@ if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
         listView(dataID);
         clearInterval(myVar);
       }
-    }, 0);
+    }, 100);
       
     
     
@@ -100,12 +100,12 @@ if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
     homeP = false;
   }
 
-var myVar = setInterval(function(){
-      if($('body').hasClass('pace-done')) {
-        listView('all', homeP);
-        clearInterval(myVar);
-      }
-    }, 0);
+  var myVar = setInterval(function(){
+    if($('body').hasClass('pace-done')) {
+      listView('all', homeP);
+      clearInterval(myVar);
+    }
+  }, 100);
     
       
     
