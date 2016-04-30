@@ -25,6 +25,34 @@ getProductValue(dataID, img_num);
 });
 
 
+function listView(dataID, homeP) {
+
+        coverVal = coverV();
+
+        if(dataID == 'all') {
+
+          $.each(coverVal, function( key, val) {
+            var all = true;
+            var val = val[0]['title'];
+            if(homeP==true) {
+              var toHome = coverVal[key][0]['toHome'];
+              if(toHome == 'yes') {
+                visibleThis (key, val, coverVal, all, homeP);
+              }
+            } else {
+            visibleThis (key, val, coverVal, all);
+            }
+            
+          });
+        } else {
+          var val = coverVal[dataID][0]['title'],
+          all = false;
+          visibleThis (dataID, val, coverVal, all);
+        }
+
+        }
+
+
 if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
 
   if($('body').hasClass('product-view')) {
@@ -74,32 +102,7 @@ if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
   //   },3000)
 }
 
-      function listView(dataID, homeP) {
-
-        coverVal = coverV();
-
-        if(dataID == 'all') {
-
-          $.each(coverVal, function( key, val) {
-            var all = true;
-            var val = val[0]['title'];
-            if(homeP==true) {
-              var toHome = coverVal[key][0]['toHome'];
-              if(toHome == 'yes') {
-                visibleThis (key, val, coverVal, all, homeP);
-              }
-            } else {
-            visibleThis (key, val, coverVal, all);
-            }
-            
-          });
-        } else {
-          var val = coverVal[dataID][0]['title'],
-          all = false;
-          visibleThis (dataID, val, coverVal, all);
-        }
-
-        }
+      
       
 
 
