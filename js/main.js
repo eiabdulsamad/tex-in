@@ -53,6 +53,8 @@ function listView(dataID, homeP) {
         }
 
 
+
+
 if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
 
   if($('body').hasClass('product-view')) {
@@ -78,9 +80,14 @@ if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
   if($('body').hasClass('products')) {
     var dataID = getUrlVars()["i"];
 
-    Pace.on('hide', function(){
-      listView(dataID);
-    });
+    var myVar = setInterval(function(){
+      if($('body').hasClass('pace-done')) {
+        listView(dataID);
+        clearInterval(myVar);
+      }
+    }, 0);
+      
+    
     
   }
 } else {
@@ -93,9 +100,15 @@ if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
     homeP = false;
   }
 
-    Pace.on('hide', function(){
-      listView('all', homeP);
-    });
+var myVar = setInterval(function(){
+      if($('body').hasClass('pace-done')) {
+        listView('all', homeP);
+        clearInterval(myVar);
+      }
+    }, 0);
+    
+      
+    
   
   // setTimeout(function() {
   //     listView('all', homeP);
