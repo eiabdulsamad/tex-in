@@ -26,9 +26,9 @@ function coverV(coverValues) {
     return cTemp;
   }
 }
-
-
 getCoverValue();
+
+
 
 
 // ---------start menu---------

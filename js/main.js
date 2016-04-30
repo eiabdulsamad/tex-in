@@ -49,9 +49,10 @@ if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
 
   if($('body').hasClass('products')) {
     var dataID = getUrlVars()["i"];
-    setTimeout(function() {
+
+    Pace.on('hide', function(){
       listView(dataID);
-    },100)
+    });
     
   }
 } else {
@@ -63,10 +64,14 @@ if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
   if($('body').hasClass('products')) {
     homeP = false;
   }
-  
-  setTimeout(function() {
+
+    Pace.on('hide', function(){
       listView('all', homeP);
-    },100)
+    });
+  
+  // setTimeout(function() {
+  //     listView('all', homeP);
+  //   },3000)
 }
 
       function listView(dataID, homeP) {
@@ -472,10 +477,5 @@ function closePopUp() {
   setTimeout(function(){$('.overlay-popup.visible').removeClass('visible');}, 500);
 
 }
-
-
-
-
-
 
 });
