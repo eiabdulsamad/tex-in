@@ -610,7 +610,7 @@ ul.sub-menu {
 .searchform {
   input {
     border: 1px solid #DDDDDD;
-    color: #CCCCC6;
+    color: black;
     font-family: 'Droid Arabic Kufi', 'Roboto', sans-serif;
     font-size: 14px;
     margin-top: 0;
@@ -3876,3 +3876,8 @@ body.page_india {
     }
   }
 }
+
+ button.input-group-addon {
+  @include transition(300ms);
+  padding: 10px 25px 10px 12px;
+ }
