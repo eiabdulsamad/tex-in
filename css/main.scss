@@ -3345,8 +3345,21 @@ div[data-rpt="2"] {
     }
   }
 }
-
+ #orderForm + .thankyou_message h2 {
+  color: #009800; margin-left: 0; margin-right: 182px; text-left:right;
+ }
 .arabic {
+
+ #orderForm + .thankyou_message h2 {
+  color: #009800; margin-left: 182px; margin-right: 0; text-align:right;
+ }
+
+  #contactForm + .thankyou_message {
+    text-align: right;
+  }
+  #signMeUpForm + .thankyou_message {
+    @include transform(rotateY(180deg));
+  }
 
   @media (max-width: 1199px) and (min-width: 991px) {
     .textksa {

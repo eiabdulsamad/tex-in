@@ -20,13 +20,14 @@ function getFormData(thisID) {
 
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
   var thisID = '#'+$(this).attr('id');
-  $(thisID+','+thisID+' *').css('cursor', 'wait');
+  $('body').css('cursor', 'wait');
 event.preventDefault();           // we are submitting via xhr below
 var data = getFormData(thisID);
 if( !validEmail(data.email) ) {   // if email is not valid show error
   $(this).find('.email-invalid').css('display', 'block');
   return false;
 } else {
+  $(this).find('.email-invalid').css('display', 'none');
 var url = event.target.action;  //
 var xhr = new XMLHttpRequest();
 xhr.open('POST', url);
@@ -34,7 +35,7 @@ xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 xhr.onreadystatechange = function() {
   $(thisID).css('display', 'none');
   $(thisID).next('.thankyou_message').css('display', 'block');
-  $(thisID+','+thisID+' *').css('cursor', 'default');
+  $('body').css('cursor', 'default');
   return;
 };
 var encoded = Object.keys(data).map(function(k) {

@@ -2816,6 +2816,24 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
     .about_details .list-items li {
       list-style: square; }
 
+#orderForm + .thankyou_message h2 {
+  color: #009800;
+  margin-left: 0;
+  margin-right: 182px;
+  text-left: right; }
+
+.arabic #orderForm + .thankyou_message h2 {
+  color: #009800;
+  margin-left: 182px;
+  margin-right: 0;
+  text-align: right; }
+.arabic #contactForm + .thankyou_message {
+  text-align: right; }
+.arabic #signMeUpForm + .thankyou_message {
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
 @media (max-width: 1199px) and (min-width: 991px) {
   .arabic .textksa {
     margin-left: -70px; }
