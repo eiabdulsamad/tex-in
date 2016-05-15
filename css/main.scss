@@ -41,7 +41,6 @@ $menu-bg: rgba(255, 255, 255, 0.94);
   overflow: hidden;
   height: 0;
   opacity: 0;
-  visibility: hidden;
   @include transition(all 700ms ease-in);
 }
 
