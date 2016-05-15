@@ -3892,8 +3892,12 @@ float: left;
 
 }
 
-/* .nav>li.email-sec, .nav>li.phone-sec {
+.nav>li.email-sec, .nav>li.phone-sec {
   display: none;
+}
+
+.nav>li.phone-sec.view_this {
+  display: block !important;
 }
 
 body.page_ksa {
@@ -3918,7 +3922,7 @@ body.page_india {
       display: block !important;
     }
   }
-} */
+}
 
  button.input-group-addon {
   @include transition(300ms);
