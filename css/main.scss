@@ -3354,7 +3354,25 @@ div[data-rpt="2"] {
  #orderForm + .thankyou_message h2 {
   color: #009800; margin-left: 0; margin-right: 182px; text-left:right;
  }
+
+
+ .for-eng {
+    display: block;
+  }
+
+  .for-arabic {
+    display: none;
+  }
+
 .arabic {
+
+  .for-eng {
+    display: none !important;
+  }
+
+  .for-arabic {
+    display: block;
+  }
 
  #orderForm + .thankyou_message h2 {
   color: #009800; margin-left: 182px; margin-right: 0; text-align:right;
@@ -3448,6 +3466,12 @@ div[data-rpt="2"] {
     }
   }
   .top-row {
+
+strong {
+      @include rotateY(180deg);
+    display: inline-block;
+}
+
     @include rotateY(180deg);
     .contactinfo {
       .nav-pills {
@@ -3868,7 +3892,7 @@ float: left;
 
 }
 
-.nav>li.email-sec, .nav>li.phone-sec {
+/* .nav>li.email-sec, .nav>li.phone-sec {
   display: none;
 }
 
@@ -3894,7 +3918,7 @@ body.page_india {
       display: block !important;
     }
   }
-}
+} */
 
  button.input-group-addon {
   @include transition(300ms);
