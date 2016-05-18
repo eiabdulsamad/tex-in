@@ -63,21 +63,23 @@ if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
     img_num = getUrlVars()["n"];
 
     
-        getProductValue(dataID, img_num);
+   getProductValue(dataID, img_num);
      
-      
-      
-   
+
+
 
     var hash = getUrlVars()["h"];
 
     if(typeof hash != 'undefined') {
+
+      $(window).load(function() {
       setTimeout(function() {
         $('#'+hash).ScrollTo({duration: 500});
         setTimeout(function() {
           $('#order-name').focus();
         },700)
       },700)
+      });
     }
 
   }
