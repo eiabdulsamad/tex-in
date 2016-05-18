@@ -62,9 +62,14 @@ if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
     var dataID = getUrlVars()["i"],
     img_num = getUrlVars()["n"];
 
-    Pace.on('hide', function(){
-      getProductValue(dataID, img_num);
-       });
+    $(window).load(function() {
+     setTimeout(function() {
+        getProductValue(dataID, img_num);
+      },100);
+    });
+      
+      
+   
 
     var hash = getUrlVars()["h"];
 
