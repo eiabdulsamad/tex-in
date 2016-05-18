@@ -62,11 +62,9 @@ if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
     var dataID = getUrlVars()["i"],
     img_num = getUrlVars()["n"];
 
-    $(window).load(function() {
-     setTimeout(function() {
+    
         getProductValue(dataID, img_num);
-      },100);
-    });
+     
       
       
    
@@ -261,7 +259,8 @@ function getProductValue(dataID, img_num) {
   }
 
 
-setTimeout(function() {
+$(window).load(function() {
+     setTimeout(function() {
   if (0 < img_num ) {
       goTo = img_num;
  } else {
@@ -270,7 +269,7 @@ setTimeout(function() {
  galleryTop.slideTo(goTo-1);
  getContents(img_num-1);
 },60);
-
+});
 }
 
 
