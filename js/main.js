@@ -306,7 +306,7 @@ $.each(data, function( key, val ) {
   }
     galleryTop.appendSlide([
       // '<div class="swiper-slide"><img src="images/products/'+dataID+zoomFile+fileName+'"></div>'
-      '<div class="swiper-slide" style="background-image:url(images/products/'+dataID+zoomFile+fileName+')"><div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div></div>'
+      '<div class="swiper-slide" style="background-image:url(images/products/'+dataID+zoomFile+fileName+')"><div class="swiper-lazy-preloader"></div></div>'
       ]);
     galleryThumbs.appendSlide([
       '<div class="swiper-slide" style="background-image:url(images/products/'+dataID+'/'+fileName+')"></div>'

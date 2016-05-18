@@ -3305,4 +3305,7 @@ button.input-group-addon {
 .opening {
   overflow: hidden; }
 
+.swiper-lazy-preloader {
+  opacity: 0; }
+
 /*# sourceMappingURL=main.css.map */
