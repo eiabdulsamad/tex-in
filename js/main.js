@@ -78,7 +78,7 @@ if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
         setTimeout(function() {
           $('#order-name').focus();
         },700)
-      },700)
+      },1000)
       });
     }
 
