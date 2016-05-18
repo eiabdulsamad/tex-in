@@ -305,7 +305,8 @@ $.each(data, function( key, val ) {
     zoomFile = '/';
   }
     galleryTop.appendSlide([
-      '<div class="swiper-slide"><img src="images/products/'+dataID+zoomFile+fileName+'"></div>'
+      // '<div class="swiper-slide"><img src="images/products/'+dataID+zoomFile+fileName+'"></div>'
+      '<div class="swiper-slide" style="background-image:url(images/products/'+dataID+zoomFile+fileName+')"></div>'
       ]);
     galleryThumbs.appendSlide([
       '<div class="swiper-slide" style="background-image:url(images/products/'+dataID+'/'+fileName+')"></div>'
