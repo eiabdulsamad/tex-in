@@ -268,7 +268,7 @@ $(window).load(function() {
  }
  galleryTop.slideTo(goTo-1);
  getContents(img_num-1);
-},60);
+},100);
 });
 }
 
