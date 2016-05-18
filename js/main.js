@@ -259,17 +259,33 @@ function getProductValue(dataID, img_num) {
   }
 
 
-$(window).load(function() {
+  if($('body').hasClass('product-view')) {
+
+    $(window).load(function() {
      setTimeout(function() {
-  if (0 < img_num ) {
-      goTo = img_num;
- } else {
-  goTo = 1;
- }
- galleryTop.slideTo(goTo-1);
- getContents(img_num-1);
-},100);
-});
+      if (0 < img_num ) {
+        goTo = img_num;
+      } else {
+        goTo = 1;
+      }
+      galleryTop.slideTo(goTo-1);
+      getContents(img_num-1);
+    },100);
+   });
+
+  } else {
+    setTimeout(function() {
+      if (0 < img_num ) {
+        goTo = img_num;
+      } else {
+        goTo = 1;
+      }
+      galleryTop.slideTo(goTo-1);
+      getContents(img_num-1);
+    },60);
+  }
+
+
 }
 
 
