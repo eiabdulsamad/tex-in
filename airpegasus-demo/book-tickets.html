@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Air Pegasus : South India to South India</title>
+  <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="static/css/library/bootstrap.css">
+  <link rel="stylesheet" href="static/css/library/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/library/ionicons.min.css">
+  <link rel="stylesheet" href="static/css/library/bootstrap-datepicker3.css">
+  <link rel="stylesheet" href="static/css/library/bootstrap-select.css">
+  <link rel="stylesheet" href="static/css/custom/styles.css">
+  <!--[if lt IE 9]>
+    <script src="static/js/library/html5shiv.min.js"></script>
+    <script src="static/js/library/respond.min.js"></script>
+  <![endif]-->
+  <script src="static/js/library/modernizr-flexbox.js"></script>
+</head>
+<body class="schedules-search book-tickets">
+
+<div class="grd-top"></div>
+<div class="grd-bottom"></div>
+
+  <div class="container-main">
+   <div class="section-top">
+
+    <a class="navbar-brand" href="index.html"><img src="static/images/logo.png" alt=""></a>
+    <div class="nav-bar top offset-top-30">
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="center-base ht-90 flex">
+   <div class="middle-box ht-100im">
+    <h4 class="inner-hd2">Book Tickets</h4>
+    <div class="offset-top-5p">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 offset-bottom-20">
+        <label for="" class="hd-lable-n">Origin</label>
+        
+        <select class="selectpicker full-width" name="SelectOriginOption" title="" required="required">
+          <option value="0">Select City</option>
+          <option value="blr">Banglore (BLR)</option>
+          <option value="maa">Chennai (MAA)</option>
+          <option value="ixe">Mangalore (IXE)</option>
+          <option value="cok">Cochin (COK)</option>
+          <option value="trv">Trivandrum (TRV)</option>
+          <option value="hbx">Hubli (HBX)</option>
+          <option value="ixm">Madurai (IXM)</option>
+          <option value="goi">Goa (GOI)</option>
+        </select>
+
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 offset-bottom-20">
+        <label for="" class="hd-lable-n">Destination</label>
+        
+        <select class="selectpicker full-width" name="SelectDestinationOption" title="" required="required">
+          <option value="0">Select Destination</option>
+        </select>
+
+      </div>
+
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 offset-bottom-20">
+        <div class="form-group datetimepick">
+          <label for="" class="hd-lable-n">Depart on</label>
+          <div class='input-group date datePicker' id='datetimepicker6'>
+            <input type='text' class="form-control normal-input-style" placeholder="Select Date" name="departOn" readonly="readonly" />
+            <span class="input-group-addon">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 offset-bottom-20">
+        <div class="form-group datetimepick custom-checkbox">
+          <input id="return_on" type="checkbox" checked="checked" />
+          <label for="return_on" class="hd-lable-n">Return on</label>
+            <div class='input-group date datePicker' id='datetimepicker7'>
+              <input type='text' class="form-control normal-input-style" placeholder="Select Date" name="returnOn" readonly="readonly"/>
+              <span class="input-group-addon">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 offset-bottom-20 block-center-lg" id="seatsSelection">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 offset-bottom-20">
+            <label for="" class="hd-lable-n">Seats</label>
+            <select class="selectpicker full-width" name="SelectAdultsOption" title="" required="required">
+              <option value="">Adults</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 offset-bottom-20">
+            <label for="" class="hd-lable-n">&nbsp;</label>
+            <select class="selectpicker full-width" name="SelectChildrenOption" title="" required="required">
+              <option value="">Children</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+            <small class="small-nrm">2-12 years</small>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 offset-bottom-20">
+            <label for="" class="hd-lable-n">&nbsp;</label>
+            <select class="selectpicker full-width" name="SelectInfantsOption" title="" required="required">
+              <option value="0">Infants</option>
+              </select>
+            <small class="small-nrm">0-2 years</small>
+          </div>
+        </div>
+      </div>
+      <div class="nav-bar bottom left width-160">
+        <a href="index.html" class="btn btn-normal offset-bottom-90">Return Home</a>
+      </div>
+      <a href="index.html" class="btn btn-normal offset-bottom-15 return-mob offset-left-17"><i class="fa fa-arrow-left" aria-hidden="true"></i> Return Home</a>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 offset-top-5p">
+        <a href="#" class="btn btn-normal btn-large block-center booking-srch-btn">Search</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="modal fade alertModal">
+  <div class="modal-dialog small">
+    <div class="modal-content">
+      <div class="modal-header border-none">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer border-none">
+        <button type="button" class="btn btn-default block-center" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="static/js/library/jquery.min.js"></script>
+  <script src="static/js/library/bootstrap.min.js"></script>
+  <script src="static/js/library/moment.min.js"></script>
+  <script src="static/js/library/bootstrap-datepicker.js"></script>
+  <script src="static/js/library/bootstrap-select.js"></script>
+  <script src="static/js/custom/custom.js"></script>
+
+
+</body>
+</html>
