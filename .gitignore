@@ -6,6 +6,8 @@ source/
 
 backup/
 
+othr/
+
 .sass-cache
 
 *.css.map
