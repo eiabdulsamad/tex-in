@@ -11,5 +11,7 @@
   "11": [{"fileName": "11.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, Blue-TTN H", "star": "4", "sNo": "DRU3564", "sizes": "m,l,xl", "colors": "#d14224,#ba2f1c,#950810,#5c071e,#59313f,#060c0c,#667272,#789fda,#a39e9b,white"}],
   "12": [{"fileName": "12.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, White-TTF F", "star": "4", "sNo": "DRU3565", "sizes": "m,l,xl", "colors": "#d14224,#ba2f1c,#950810,#5c071e,#59313f,#060c0c,#667272,#789fda,#a39e9b,white"}],
   "13": [{"fileName": "13.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, Grey Class-CT9 H", "star": "4", "sNo": "DRU3567", "sizes": "m,l,xl", "colors": "#d14224,#ba2f1c,#950810,#5c071e,#59313f,#060c0c,#667272,#789fda,#a39e9b,white"}],
-  "14": [{"fileName": "14.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, Red-TTN F", "star": "4", "sNo": "DRU3568", "sizes": "m,l,xl", "colors": "#d14224,#ba2f1c,#950810,#5c071e,#59313f,#060c0c,#667272,#789fda,#a39e9b,white"}]
+  "14": [{"fileName": "14.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, Red-TTN F", "star": "4", "sNo": "DRU3568", "sizes": "m,l,xl", "colors": "#d14224,#ba2f1c,#950810,#5c071e,#59313f,#060c0c,#667272,#789fda,#a39e9b,white"}],
+  "15": [{"fileName": "15.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, Black-TTN F", "star": "3", "sNo": "DUR42", "sizes": "m,l,xl", "colors": "black,white,#c71e3d"}],
+  "16": [{"fileName": "16.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, Blue-BLF", "star": "5", "sNo": "DRU3569", "sizes": "m,l,xl", "colors": "black,white,#4d59a3"}]
 }
