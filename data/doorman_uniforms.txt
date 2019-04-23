@@ -12,6 +12,11 @@
   "12": [{"fileName": "12.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, White-TTF F", "star": "4", "sNo": "DRU3565", "sizes": "m,l,xl", "colors": "#d14224,#ba2f1c,#950810,#5c071e,#59313f,#060c0c,#667272,#789fda,#a39e9b,white"}],
   "13": [{"fileName": "13.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, Grey Class-CT9 H", "star": "4", "sNo": "DRU3567", "sizes": "m,l,xl", "colors": "#d14224,#ba2f1c,#950810,#5c071e,#59313f,#060c0c,#667272,#789fda,#a39e9b,white"}],
   "14": [{"fileName": "14.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, Red-TTN F", "star": "4", "sNo": "DRU3568", "sizes": "m,l,xl", "colors": "#d14224,#ba2f1c,#950810,#5c071e,#59313f,#060c0c,#667272,#789fda,#a39e9b,white"}],
-  "15": [{"fileName": "15.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, Black-TTN F", "star": "3", "sNo": "DUR42", "sizes": "m,l,xl", "colors": "black,white,#c71e3d"}],
-  "16": [{"fileName": "16.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, Blue-BLF", "star": "5", "sNo": "DRU3569", "sizes": "m,l,xl", "colors": "black,white,#4d59a3"}]
+  "15": [{"fileName": "15.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, Black-TTN F", "star": "5", "sNo": "DUR42", "sizes": "m,l,xl", "colors": "black,white,#c71e3d"}],
+  "16": [{"fileName": "16.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, Blue-BLF", "star": "5", "sNo": "DRU3569", "sizes": "m,l,xl", "colors": "black,white,#4d59a3"}],
+  "17": [{"fileName": "17.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, Red-DR", "star": "5", "sNo": "DRU3570", "sizes": "m,l,xl", "colors": "black,white,#e3182d"}],
+  "18": [{"fileName": "18.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, Dark Red-T1", "star": "5", "sNo": "DRU3571", "sizes": "m,l,xl", "colors": "black,white,#2c0f00,#b68a38"}],
+  "19": [{"fileName": "19.jpg", "zoom":"yes", "new": "no", "subTitle": "Doorman Uniforms, Bright Red-T6", "star": "5", "sNo": "DDU6660", "sizes": "m,l,xl", "colors": "#d6260d,#dfd9c6,black"}],
+  "20": [{"fileName": "20.jpg", "zoom":"no", "new": "no", "subTitle": "Doorman Uniforms, Bright Red-T7", "star": "4", "sNo": "DUR4269", "sizes": "m,l,xl", "colors": "#e32e24,#dfd9c6,black"}],
+  "21": [{"fileName": "21.jpg", "zoom":"no", "new": "no", "subTitle": "Doorman Uniforms, Black DR11", "star": "4", "sNo": "DUR4270", "sizes": "m,l,xl", "colors": "black,#d5200c,white"}]
 }
