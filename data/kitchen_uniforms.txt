@@ -22,6 +22,7 @@
   "22": [{"fileName": "22.jpg", "zoom":"yes", "new": "no", "subTitle": "Kitchen uniforms, White/Black/Orange C-45", "star": "5", "sNo": "KCH256105", "sizes": "xs,s,m,l,xl", "colors": "#361133,#292632,#c53527,#396a41,#413d61,#201420,#b50000,#fffff"}],
   "23": [{"fileName": "23.jpg", "zoom":"yes", "new": "no", "subTitle": "Kitchen uniforms, White/Black Cross-B2", "star": "5", "sNo": "KCH256106", "sizes": "xs,s,m,l,xl", "colors": "#361133,#292632,#c53527,#396a41,#413d61,#201420,#b50000,#fffff"}],
   "24": [{"fileName": "24.jpg", "zoom":"yes", "new": "no", "subTitle": "Kitchen uniforms, White/Black C-56", "star": "5", "sNo": "KCH256107", "sizes": "xs,s,m,l,xl", "colors": "#361133,#292632,#c53527,#396a41,#413d61,#201420,#b50000,#fffff"}],
-  "25": [{"fileName": "25.gif", "zoom":"yes", "new": "no", "subTitle": "Kitchen uniforms, White/Black/Red C-4", "star": "5", "sNo": "KCH256108", "sizes": "xs,s,m,l,xl", "colors": "#361133,#292632,#c53527,#396a41,#413d61,#201420,#b50000,#fffff"}]
+  "25": [{"fileName": "25.gif", "zoom":"yes", "new": "no", "subTitle": "Kitchen uniforms, White/Black/Red C-4", "star": "5", "sNo": "KCH256108", "sizes": "xs,s,m,l,xl", "colors": "#361133,#292632,#c53527,#396a41,#413d61,#201420,#b50000,#fffff"}],
+  "26": [{"fileName": "26.jpg", "zoom":"no", "new": "no", "subTitle": "Kitchen uniforms, White/Black/Red C-7", "star": "5", "sNo": "KU6571", "sizes": "xs,s,m,l,xl", "colors": "#361133,#292632,#c53527,#396a41,#413d61,#201420,#b50000,#fffff"}]
 
 }
